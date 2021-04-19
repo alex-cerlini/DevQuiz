@@ -1,3 +1,4 @@
+import 'package:dev_quiz/home/widgets/chart/chart_widget.dart';
 import 'package:flutter/material.dart';
 // import 'package:dev_quiz/core/core.dart';
 
@@ -8,11 +9,7 @@ class ScoreCardWidget extends StatelessWidget {
       children: [
         Expanded(
           flex: 1,
-          child: Container(
-            width: 80,
-            height: 80,
-            color: Colors.red,
-          ),
+          child: ChartWidget(),
         ),
         Expanded(
           flex: 3,
