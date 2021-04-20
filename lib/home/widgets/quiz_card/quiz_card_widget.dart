@@ -19,7 +19,7 @@ class QuizCardWidget extends StatelessWidget {
           Container(
             height: 40,
             width: 40,
-            child: Image.asset(AppImages.blocks),
+            child: Image.asset(AppImages.data),
           ),
           SizedBox(
             height: 21,
@@ -33,7 +33,7 @@ class QuizCardWidget extends StatelessWidget {
               Expanded(
                 flex: 1,
                 child: Text(
-                  "3 de 10",
+                  "3/10",
                   style: AppTextStyles.body11,
                 ),
               ),
