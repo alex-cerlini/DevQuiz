@@ -5,6 +5,7 @@ class QuizCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.all(16),
       decoration: BoxDecoration(
         border: Border.fromBorderSide(
           BorderSide(color: AppColors.border),
@@ -19,7 +20,13 @@ class QuizCardWidget extends StatelessWidget {
             width: 40,
             child: Image.asset(AppImages.blocks),
           ),
+          SizedBox(
+            height: 24,
+          ),
           Text("Gerenciamento de Estado", style: AppTextStyles.heading15),
+          SizedBox(
+            height: 24,
+          ),
           Row(
             children: [
               Expanded(
