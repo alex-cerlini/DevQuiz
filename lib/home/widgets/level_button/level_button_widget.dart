@@ -39,9 +39,9 @@ class LevelButtonWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.levelButtonFacil,
+        color: color,
         border: Border.fromBorderSide(
-          BorderSide(color: AppColors.levelButtonBorderFacil),
+          BorderSide(color: borderColor),
         ),
         borderRadius: BorderRadius.circular(28),
       ),
@@ -50,7 +50,7 @@ class LevelButtonWidget extends StatelessWidget {
         child: Text(
           label,
           style: GoogleFonts.notoSans(
-            color: AppColors.levelButtonTextFacil,
+            color: fontColor,
             fontSize: 13,
           ),
         ),
