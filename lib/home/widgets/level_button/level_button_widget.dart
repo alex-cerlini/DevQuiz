@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class LevelButtonWidget extends StatelessWidget {
+  final String label;
+  const LevelButtonWidget({Key? key, required this.label}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
