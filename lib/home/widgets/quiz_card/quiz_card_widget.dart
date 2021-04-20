@@ -26,6 +26,12 @@ class QuizCardWidget extends StatelessWidget {
                 "3 de 10",
                 style: AppTextStyles.body11,
               ),
+              LinearProgressIndicator(
+                value: 0.3,
+                backgroundColor: AppColors.chartSecondary,
+                valueColor:
+                    AlwaysStoppedAnimation<Color>(AppColors.chartPrimary),
+              ),
             ],
           ),
         ],
