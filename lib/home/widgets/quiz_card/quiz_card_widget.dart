@@ -10,6 +10,7 @@ class QuizCardWidget extends StatelessWidget {
           BorderSide(color: AppColors.border),
         ),
         color: AppColors.white,
+        borderRadius: BorderRadius.circular(10),
       ),
     );
   }
