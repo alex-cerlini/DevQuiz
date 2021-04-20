@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './widgets/appbar/app_bar_widget.dart';
+import 'widgets/level_button/level_button_widget.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -11,6 +12,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarWidget(),
+      body: LevelButtonWidget(),
     );
   }
 }
