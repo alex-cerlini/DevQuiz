@@ -1,4 +1,5 @@
 import 'package:dev_quiz/core/core.dart';
+import 'package:dev_quiz/shared/widgets/progress_indicator/progress_indicator_widget.dart';
 import 'package:flutter/material.dart';
 
 class QuestionIndicatorWidget extends StatelessWidget {
@@ -21,6 +22,7 @@ class QuestionIndicatorWidget extends StatelessWidget {
               ],
             ),
           ),
+          ProgressIndicatorWidget(value: 0.4),
         ],
       ),
     );
