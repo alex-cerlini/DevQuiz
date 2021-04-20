@@ -22,15 +22,19 @@ class QuizCardWidget extends StatelessWidget {
           Text("Gerenciamento de Estado", style: AppTextStyles.heading15),
           Row(
             children: [
-              Text(
-                "3 de 10",
-                style: AppTextStyles.body11,
+              Expanded(
+                child: Text(
+                  "3 de 10",
+                  style: AppTextStyles.body11,
+                ),
               ),
-              LinearProgressIndicator(
-                value: 0.3,
-                backgroundColor: AppColors.chartSecondary,
-                valueColor:
-                    AlwaysStoppedAnimation<Color>(AppColors.chartPrimary),
+              Expanded(
+                child: LinearProgressIndicator(
+                  value: 0.3,
+                  backgroundColor: AppColors.chartSecondary,
+                  valueColor:
+                      AlwaysStoppedAnimation<Color>(AppColors.chartPrimary),
+                ),
               ),
             ],
           ),
