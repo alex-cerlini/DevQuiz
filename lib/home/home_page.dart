@@ -14,20 +14,24 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBarWidget(),
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: Column(
             children: [
-              LevelButtonWidget(
-                label: "Fácil",
-              ),
-              LevelButtonWidget(
-                label: "Médio",
-              ),
-              LevelButtonWidget(
-                label: "Difícil",
-              ),
-              LevelButtonWidget(
-                label: "Perito",
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  LevelButtonWidget(
+                    label: "Fácil",
+                  ),
+                  LevelButtonWidget(
+                    label: "Médio",
+                  ),
+                  LevelButtonWidget(
+                    label: "Difícil",
+                  ),
+                  LevelButtonWidget(
+                    label: "Perito",
+                  ),
+                ],
               ),
             ],
           ),
