@@ -19,7 +19,7 @@ class LevelButtonWidget extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 26, vertical: 6),
         child: Text(
-          "Fácil",
+          label,
           style: GoogleFonts.notoSans(
             color: AppColors.levelButtonTextFacil,
             fontSize: 13,
