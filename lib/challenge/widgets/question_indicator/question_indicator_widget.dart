@@ -21,6 +21,9 @@ class QuestionIndicatorWidget extends StatelessWidget {
                 Text("de 10", style: AppTextStyles.body),
               ],
             ),
+            SizedBox(
+              height: 16,
+            ),
             ProgressIndicatorWidget(value: 0.4),
           ],
         ),
