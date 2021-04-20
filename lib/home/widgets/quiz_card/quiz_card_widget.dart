@@ -12,6 +12,9 @@ class QuizCardWidget extends StatelessWidget {
         color: AppColors.white,
         borderRadius: BorderRadius.circular(10),
       ),
+      child: Column(
+        children: [],
+      ),
     );
   }
 }
