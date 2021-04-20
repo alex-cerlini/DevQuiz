@@ -14,6 +14,7 @@ class ScoreCardWidget extends StatelessWidget {
           borderRadius: BorderRadius.circular(15),
         ),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Expanded(
