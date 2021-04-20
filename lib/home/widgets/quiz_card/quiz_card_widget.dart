@@ -13,7 +13,12 @@ class QuizCardWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
       ),
       child: Column(
-        children: [],
+        children: [
+          Container(
+            height: 40,
+            width: 40,
+          ),
+        ],
       ),
     );
   }
