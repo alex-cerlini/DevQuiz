@@ -13,11 +13,14 @@ class LevelButtonWidget extends StatelessWidget {
         ),
         borderRadius: BorderRadius.circular(28),
       ),
-      child: Text(
-        "Fácil",
-        style: GoogleFonts.notoSans(
-          color: AppColors.levelButtonTextFacil,
-          fontSize: 13,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 26, vertical: 6),
+        child: Text(
+          "Fácil",
+          style: GoogleFonts.notoSans(
+            color: AppColors.levelButtonTextFacil,
+            fontSize: 13,
+          ),
         ),
       ),
     );
