@@ -4,7 +4,9 @@ import 'package:google_fonts/google_fonts.dart';
 
 class LevelButtonWidget extends StatelessWidget {
   final String label;
-  LevelButtonWidget({Key? key, required this.label}) : super(key: key);
+  LevelButtonWidget({Key? key, required this.label})
+      : assert(["Fácil", "Médio", "Difícil", "Perito"].contains(label)),
+        super(key: key);
 
   final config = {
     "Fácil": {
