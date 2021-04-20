@@ -7,6 +7,9 @@ class LevelButtonWidget extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: AppColors.levelButtonFacil,
+        border: Border.fromBorderSide(
+          BorderSide(color: AppColors.levelButtonBorderFacil),
+        ),
         borderRadius: BorderRadius.circular(28),
       ),
       child: Text("Fácil"),
