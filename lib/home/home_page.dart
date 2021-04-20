@@ -17,6 +17,9 @@ class _HomePageState extends State<HomePage> {
             LevelButtonWidget(
               label: "Fácil",
             ),
+            LevelButtonWidget(
+              label: "Médio",
+            ),
           ],
         ));
   }
