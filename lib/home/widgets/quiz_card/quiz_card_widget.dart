@@ -22,11 +22,11 @@ class QuizCardWidget extends StatelessWidget {
             child: Image.asset(AppImages.blocks),
           ),
           SizedBox(
-            height: 24,
+            height: 21,
           ),
           Text("Gerenciamento de Estado", style: AppTextStyles.heading15),
           SizedBox(
-            height: 24,
+            height: 21,
           ),
           Row(
             children: [
