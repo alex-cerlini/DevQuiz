@@ -31,6 +31,8 @@ class LevelButtonWidget extends StatelessWidget {
     },
   };
 
+  Color get color => config[label]!['color']!;
+
   @override
   Widget build(BuildContext context) {
     return Container(
