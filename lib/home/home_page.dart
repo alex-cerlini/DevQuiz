@@ -1,3 +1,4 @@
+import 'package:dev_quiz/home/widgets/quiz_card/quiz_card_widget.dart';
 import 'package:flutter/material.dart';
 import './widgets/appbar/app_bar_widget.dart';
 import 'widgets/level_button/level_button_widget.dart';
@@ -33,6 +34,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ],
               ),
+              QuizCardWidget(),
             ],
           ),
         ));
