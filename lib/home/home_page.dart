@@ -34,7 +34,15 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ],
               ),
-              QuizCardWidget(),
+              Expanded(
+                child: GridView.count(
+                  crossAxisCount: 2,
+                  children: [
+                    QuizCardWidget(),
+                    QuizCardWidget(),
+                  ],
+                ),
+              ),
             ],
           ),
         ));
