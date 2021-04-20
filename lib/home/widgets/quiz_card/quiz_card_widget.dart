@@ -17,7 +17,7 @@ class QuizCardWidget extends StatelessWidget {
           Container(
             height: 40,
             width: 40,
-            color: Colors.red,
+            child: Image.asset(AppImages.blocks),
           ),
           Text("Gerenciamento de Estado", style: AppTextStyles.heading15),
           Row(
