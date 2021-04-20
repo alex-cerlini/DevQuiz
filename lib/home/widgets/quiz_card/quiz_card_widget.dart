@@ -20,6 +20,14 @@ class QuizCardWidget extends StatelessWidget {
             color: Colors.red,
           ),
           Text("Gerenciamento de Estado", style: AppTextStyles.heading15),
+          Row(
+            children: [
+              Text(
+                "3 de 10",
+                style: AppTextStyles.body11,
+              ),
+            ],
+          ),
         ],
       ),
     );
