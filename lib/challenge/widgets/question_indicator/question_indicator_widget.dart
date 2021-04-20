@@ -16,8 +16,8 @@ class QuestionIndicatorWidget extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Questão 04"),
-                Text("de 10"),
+                Text("Questão 04", style: AppTextStyles.body),
+                Text("de 10", style: AppTextStyles.body),
               ],
             ),
           ),
