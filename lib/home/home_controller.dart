@@ -7,4 +7,11 @@ class HomeController {
 
   UserModel? user;
   List<QuizModel>? quizzes;
+
+  void getUser() {
+    user = UserModel(
+      name: "Alex",
+      photoUrl: "https://avatars.githubusercontent.com/u/56663683?v=4",
+    );
+  }
 }
