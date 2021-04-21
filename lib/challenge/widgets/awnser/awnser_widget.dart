@@ -10,6 +10,7 @@ class AwnserWidget extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppColors.white,
         borderRadius: BorderRadius.circular(10),
+        border: Border.fromBorderSide(BorderSide(color: AppColors.border)),
       ),
     );
   }
