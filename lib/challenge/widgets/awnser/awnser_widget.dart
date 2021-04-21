@@ -38,6 +38,12 @@ class AwnserWidget extends StatelessWidget {
             Container(
               width: 24,
               height: 24,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(500),
+                border: Border.fromBorderSide(
+                  BorderSide(color: AppColors.border),
+                ),
+              ),
               child: Icon(Icons.check),
             ),
           ],
