@@ -14,7 +14,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBarWidget(),
+        appBar: AppBarWidget(
+          user: controller.user!,
+        ),
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
