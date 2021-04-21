@@ -57,7 +57,9 @@ class _HomePageState extends State<HomePage> {
                   crossAxisCount: 2,
                   children: controller.quizzes!
                       .map((e) => QuizCardWidget(
-                          title: "Gerenciamento de Estado", completed: "3/10"))
+                          title: e.title,
+                          completed:
+                              "${e.questionAwnsered}/${e.questions.length}"))
                       .toList(),
                 ),
               ),
