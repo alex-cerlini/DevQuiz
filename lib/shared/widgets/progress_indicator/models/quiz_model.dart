@@ -17,5 +17,8 @@ class QuizModel {
   QuizModel({
     required this.title,
     required this.questions,
+    this.questionAwnsered = 0,
+    required this.imagem,
+    required this.level,
   });
 }
