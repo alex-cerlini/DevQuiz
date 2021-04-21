@@ -44,5 +44,6 @@ class HomeController {
             ])
           ])
     ];
+    state = HomeState.sucess;
   }
 }
