@@ -44,7 +44,11 @@ class AwnserWidget extends StatelessWidget {
                   BorderSide(color: AppColors.border),
                 ),
               ),
-              child: Icon(Icons.check),
+              child: Icon(
+                Icons.check,
+                size: 16,
+                color: Colors.white,
+              ),
             ),
           ],
         ),
