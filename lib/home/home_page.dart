@@ -1,3 +1,4 @@
+import 'package:dev_quiz/challenge/widgets/quiz/quiz_widget.dart';
 import 'package:dev_quiz/home/home_controller.dart';
 import 'package:dev_quiz/home/widgets/quiz_card/quiz_card_widget.dart';
 import 'package:flutter/material.dart';
@@ -46,12 +47,11 @@ class _HomePageState extends State<HomePage> {
                   crossAxisSpacing: 16,
                   mainAxisSpacing: 16,
                   crossAxisCount: 2,
-                  children: [
-                    QuizCardWidget(),
-                    QuizCardWidget(),
-                    QuizCardWidget(),
-                    QuizCardWidget(),
-                  ],
+                  children: controller.quizzes!
+                      .map((e) => QuizWidget(
+                            title: e.title,
+                          ))
+                      .toList(),
                 ),
               ),
             ],
