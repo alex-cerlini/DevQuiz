@@ -1,5 +1,5 @@
 enum HomeState {
-  sucess,
+  success,
   loading,
   error,
   empty,
