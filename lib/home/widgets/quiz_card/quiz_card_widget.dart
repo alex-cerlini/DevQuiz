@@ -31,7 +31,7 @@ class QuizCardWidget extends StatelessWidget {
           SizedBox(
             height: 21,
           ),
-          Text("Gerenciamento de Estado", style: AppTextStyles.heading15),
+          Text(title, style: AppTextStyles.heading15),
           SizedBox(
             height: 21,
           ),
@@ -40,7 +40,7 @@ class QuizCardWidget extends StatelessWidget {
               Expanded(
                 flex: 1,
                 child: Text(
-                  "3/10",
+                  completed,
                   style: AppTextStyles.body11,
                 ),
               ),
