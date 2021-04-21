@@ -3,7 +3,15 @@ import 'package:flutter/material.dart';
 
 class AwnserWidget extends StatelessWidget {
   final String title;
-  const AwnserWidget({Key? key, required this.title}) : super(key: key);
+  final bool isRight;
+  final bool isSelected;
+
+  const AwnserWidget({
+    Key? key,
+    required this.title,
+    required this.isRight,
+    required this.isSelected,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
