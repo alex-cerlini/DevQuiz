@@ -11,7 +11,8 @@ class HomeController {
   UserModel? user;
   List<QuizModel>? quizzes;
 
-  void getUser() {
+  void getUser() async {
+    await Future.delayed(Duration(seconds: 2));
     user = UserModel(
       name: "Alex",
       photoUrl: "https://avatars.githubusercontent.com/u/56663683?v=4",
