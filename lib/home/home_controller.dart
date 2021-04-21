@@ -12,6 +12,7 @@ class HomeController {
   List<QuizModel>? quizzes;
 
   void getUser() async {
+    state = HomeState.loading;
     await Future.delayed(Duration(seconds: 2));
     user = UserModel(
       name: "Alex",
