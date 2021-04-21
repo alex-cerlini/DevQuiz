@@ -2,7 +2,8 @@ import 'package:dev_quiz/core/core.dart';
 import 'package:flutter/material.dart';
 
 class AwnserWidget extends StatelessWidget {
-  const AwnserWidget({Key? key}) : super(key: key);
+  final String title;
+  const AwnserWidget({Key? key, required this.title}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
