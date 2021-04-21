@@ -17,7 +17,14 @@ class AwnserWidget extends StatelessWidget {
       ),
       child: Row(
         children: [
-          Text(title, style: AppTextStyles.body),
+          Text(
+            title,
+            style: AppTextStyles.body,
+          ),
+          Container(
+            width: 24,
+            height: 24,
+          ),
         ],
       ),
     );
