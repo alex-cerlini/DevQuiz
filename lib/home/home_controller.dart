@@ -1,4 +1,5 @@
 import 'package:dev_quiz/home/home_state.dart';
+import 'package:dev_quiz/shared/widgets/progress_indicator/models/question_model.dart';
 import 'package:dev_quiz/shared/widgets/progress_indicator/models/quiz_model.dart';
 import 'package:dev_quiz/shared/widgets/progress_indicator/models/user_model.dart';
 
@@ -15,5 +16,16 @@ class HomeController {
     );
   }
 
-  void getQuizzes() {}
+  void getQuizzes() {
+    quizzes = [
+      QuizModel(level: Level.facil, imagem: AppImages.blocks, title: "NLW 5 FLUTTER", questions: [
+        QuestionModel(title: "Está curtindo o flutter?", awnsers: [
+          AwnserModel(title: "Estou curtindo"),
+          AwnserModel(title: "Amando Flutter"),
+          AwnserModel(title: "Muito top"),
+          AwnserModel(title: "Show de bola", isRight: true),
+        ])
+      ])
+    ]
+  }
 }
