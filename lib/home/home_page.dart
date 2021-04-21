@@ -12,6 +12,14 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final controller = HomeController();
+
+  @override
+  void initState() {
+    super.initState();
+    controller.getUser();
+    controller.getQuizzes();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,11 +55,8 @@ class _HomePageState extends State<HomePage> {
                   crossAxisSpacing: 16,
                   mainAxisSpacing: 16,
                   crossAxisCount: 2,
-                  children: controller.quizzes!
-                      .map((e) => QuizWidget(
-                            title: e.title,
-                          ))
-                      .toList(),
+                  children:
+                      controller.quizzes!.map((e) => QuizCardWidget()).toList(),
                 ),
               ),
             ],
