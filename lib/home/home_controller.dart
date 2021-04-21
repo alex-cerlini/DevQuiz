@@ -14,4 +14,6 @@ class HomeController {
       photoUrl: "https://avatars.githubusercontent.com/u/56663683?v=4",
     );
   }
+
+  void getQuizzes() {}
 }
