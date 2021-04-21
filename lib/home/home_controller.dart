@@ -18,6 +18,7 @@ class HomeController {
       name: "Alex",
       photoUrl: "https://avatars.githubusercontent.com/u/56663683?v=4",
     );
+    state = HomeState.sucess;
   }
 
   void getQuizzes() async {
