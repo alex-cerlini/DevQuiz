@@ -16,7 +16,9 @@ class AwnserWidget extends StatelessWidget {
         ),
       ),
       child: Row(
-        children: [],
+        children: [
+          Text(title, style: AppTextStyles.body),
+        ],
       ),
     );
   }
