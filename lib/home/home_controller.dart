@@ -20,14 +20,18 @@ class HomeController {
 
   void getQuizzes() {
     quizzes = [
-      QuizModel(level: Level.facil, imagem: AppImages.blocks, title: "NLW 5 FLUTTER", questions: [
-        QuestionModel(title: "Está curtindo o flutter?", awnsers: [
-          AwnserModel(title: "Estou curtindo"),
-          AwnserModel(title: "Amando Flutter"),
-          AwnserModel(title: "Muito top"),
-          AwnserModel(title: "Show de bola", isRight: true),
-        ])
-      ])
-    ]
+      QuizModel(
+          level: Level.facil,
+          imagem: AppImages.blocks,
+          title: "NLW 5 FLUTTER",
+          questions: [
+            QuestionModel(title: "Está curtindo o flutter?", awnsers: [
+              AwnserModel(title: "Estou curtindo"),
+              AwnserModel(title: "Amando Flutter"),
+              AwnserModel(title: "Muito top"),
+              AwnserModel(title: "Show de bola", isRight: true),
+            ])
+          ])
+    ];
   }
 }
