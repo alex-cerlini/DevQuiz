@@ -3,6 +3,12 @@ import 'package:dev_quiz/shared/widgets/progress_indicator/progress_indicator_wi
 import 'package:flutter/material.dart';
 
 class QuizCardWidget extends StatelessWidget {
+  final String title;
+  final String completed;
+
+  const QuizCardWidget({Key? key, required this.title, required this.completed})
+      : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
