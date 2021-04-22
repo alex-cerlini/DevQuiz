@@ -19,11 +19,7 @@ class HomeController {
 
   void getUser() async {
     state = HomeState.loading;
-    await Future.delayed(Duration(seconds: 2));
-    user = UserModel(
-      name: "Alex",
-      photoUrl: "https://avatars.githubusercontent.com/u/56663683?v=4",
-    );
+    user = await repository.getUser();
     state = HomeState.success;
   }
 
