@@ -18,10 +18,8 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    setState(() {
-      controller.getUser();
-      controller.getQuizzes();
-    });
+    controller.getUser();
+    controller.getQuizzes();
   }
 
   @override
