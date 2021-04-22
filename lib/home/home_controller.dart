@@ -9,6 +9,7 @@ import 'package:flutter/foundation.dart';
 class HomeController {
   final stateNotifier = ValueNotifier<HomeState>(HomeState.empty);
   set state(HomeState state) => stateNotifier.value = state;
+  HomeState get state => stateNotifier.value;
 
   UserModel? user;
   List<QuizModel>? quizzes;
