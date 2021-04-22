@@ -24,28 +24,7 @@ class HomeController {
   }
 
   void getQuizzes() async {
-    await Future.delayed(Duration(seconds: 2));
-    quizzes = [
-      QuizModel(
-          level: Level.facil,
-          imagem: AppImages.blocks,
-          questionAwnsered: 1,
-          title: "NLW 5 FLUTTER",
-          questions: [
-            QuestionModel(title: "Está curtindo o flutter?", awnsers: [
-              AwnserModel(title: "Estou curtindo"),
-              AwnserModel(title: "Amando Flutter"),
-              AwnserModel(title: "Muito top"),
-              AwnserModel(title: "Show de bola", isRight: true),
-            ]),
-            QuestionModel(title: "Está curtindo o flutter?", awnsers: [
-              AwnserModel(title: "Estou curtindo"),
-              AwnserModel(title: "Amando Flutter"),
-              AwnserModel(title: "Muito top"),
-              AwnserModel(title: "Show de bola", isRight: true),
-            ])
-          ])
-    ];
+    quizzes = await repository.getQuizzes();
     state = HomeState.success;
   }
 }
