@@ -24,12 +24,15 @@ class _ChallengePageState extends State<ChallengePage> {
       body: QuizWidget(
         title: "O que o Flutter faz em sua totalidade?",
       ),
-      bottomNavigationBar: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          NextButtonWidget(label: "Fácil"),
-          NextButtonWidget(label: "Confirmar"),
-        ],
+      bottomNavigationBar: SafeArea(
+        bottom: true,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            NextButtonWidget(label: "Fácil"),
+            NextButtonWidget(label: "Confirmar"),
+          ],
+        ),
       ),
     );
   }
