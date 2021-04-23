@@ -11,6 +11,7 @@ class NextButtonWidget extends StatelessWidget {
     required this.label,
     required this.backgroundColor,
     required this.fontColor,
+    required this.borderColor,
   });
 
   NextButtonWidget.darkGreen({required String label})
