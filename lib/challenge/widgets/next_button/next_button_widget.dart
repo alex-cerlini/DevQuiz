@@ -10,18 +10,24 @@ class NextButtonWidget extends StatelessWidget {
     return Container(
       height: 48,
       child: TextButton(
-          style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all(AppColors.darkGreen),
-          ),
-          onPressed: () {},
-          child: Text(
-            label,
-            style: GoogleFonts.notoSans(
-              fontWeight: FontWeight.w600,
-              fontSize: 15,
-              color: AppColors.white,
+        style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all(AppColors.darkGreen),
+          shape: MaterialStateProperty.all(
+            RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10),
             ),
-          )),
+          ),
+        ),
+        onPressed: () {},
+        child: Text(
+          label,
+          style: GoogleFonts.notoSans(
+            fontWeight: FontWeight.w600,
+            fontSize: 15,
+            color: AppColors.white,
+          ),
+        ),
+      ),
     );
   }
 }
