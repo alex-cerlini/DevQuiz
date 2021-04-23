@@ -29,8 +29,8 @@ class _ChallengePageState extends State<ChallengePage> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Expanded(child: NextButtonWidget(label: "Pular")),
-            Expanded(child: NextButtonWidget(label: "Confirmar")),
+            Expanded(child: NextButtonWidget.white(label: "Pular")),
+            Expanded(child: NextButtonWidget.darkGreen(label: "Confirmar")),
           ],
         ),
       ),
