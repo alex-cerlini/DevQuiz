@@ -4,7 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 class NextButtonWidget extends StatelessWidget {
   final String label;
-  NextButtonWidget({required this.label});
+  final Color backgroundColor;
+  NextButtonWidget({required this.label, required this.backgroundColor});
   @override
   Widget build(BuildContext context) {
     return Container(
