@@ -6,6 +6,7 @@ class NextButtonWidget extends StatelessWidget {
   final String label;
   final Color backgroundColor;
   final Color fontColor;
+  final Color borderColor;
   NextButtonWidget({
     required this.label,
     required this.backgroundColor,
