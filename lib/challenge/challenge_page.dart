@@ -25,6 +25,7 @@ class _ChallengePageState extends State<ChallengePage> {
         title: "O que o Flutter faz em sua totalidade?",
       ),
       bottomNavigationBar: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           NextButtonWidget(label: "Fácil"),
           NextButtonWidget(label: "Confirmar"),
