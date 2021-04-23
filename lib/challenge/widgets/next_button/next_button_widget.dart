@@ -12,12 +12,12 @@ class NextButtonWidget extends StatelessWidget {
     required this.fontColor,
   });
 
-  NextButtonWidget.green(String label)
-      : this.backgroundColor = AppColors.green,
+  NextButtonWidget.darkGreen({required String label})
+      : this.backgroundColor = AppColors.darkGreen,
         this.fontColor = AppColors.white,
         label = label;
 
-  NextButtonWidget.white(String label)
+  NextButtonWidget.white({required String label})
       : this.backgroundColor = AppColors.white,
         this.fontColor = AppColors.grey,
         label = label;
@@ -41,7 +41,7 @@ class NextButtonWidget extends StatelessWidget {
           style: GoogleFonts.notoSans(
             fontWeight: FontWeight.w600,
             fontSize: 15,
-            color: AppColors.white,
+            color: fontColor,
           ),
         ),
       ),
