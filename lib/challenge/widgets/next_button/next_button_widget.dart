@@ -12,7 +12,7 @@ class NextButtonWidget extends StatelessWidget {
     required this.fontColor,
   });
 
-  NextButtonWidget.purple(String label)
+  NextButtonWidget.green(String label)
       : this.backgroundColor = AppColors.green,
         this.fontColor = AppColors.white,
         label = label;
