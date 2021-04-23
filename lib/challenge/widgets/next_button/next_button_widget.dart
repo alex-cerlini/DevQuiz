@@ -12,7 +12,10 @@ class NextButtonWidget extends StatelessWidget {
           onPressed: () {},
           child: Text(
             label,
-            style: GoogleFonts.notoSans(),
+            style: GoogleFonts.notoSans(
+              fontWeight: FontWeight.w600,
+              fontSize: 15,
+            ),
           )),
     );
   }
