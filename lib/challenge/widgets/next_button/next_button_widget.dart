@@ -11,6 +11,12 @@ class NextButtonWidget extends StatelessWidget {
     required this.backgroundColor,
     required this.fontColor,
   });
+
+  NextButtonWidget.purple(String label)
+      : this.backgroundColor = AppColors.green,
+        this.fontColor = AppColors.white,
+        label = label;
+
   @override
   Widget build(BuildContext context) {
     return Container(
