@@ -19,6 +19,7 @@ class NextButtonWidget extends StatelessWidget {
             style: GoogleFonts.notoSans(
               fontWeight: FontWeight.w600,
               fontSize: 15,
+              color: AppColors.white,
             ),
           )),
     );
