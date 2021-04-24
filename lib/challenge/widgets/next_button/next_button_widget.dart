@@ -48,7 +48,7 @@ class NextButtonWidget extends StatelessWidget {
               ),
             ),
             side: MaterialStateProperty.all(BorderSide(color: borderColor))),
-        onPressed: () {},
+        onPressed: onTap,
         child: Text(
           label,
           style: GoogleFonts.notoSans(
