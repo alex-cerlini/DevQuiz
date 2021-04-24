@@ -7,7 +7,17 @@
 	🚧  DevQuiz 🚀 Being building  🚧
 </h4>
 
+## About this project
+
+This software was developer inside Next Level 5 by RocketSeat. The App is a Quiz for developers can check your programming knowledge.
+
+---
+
 ## Features
+
+Empty for now, wait.
+
+---
 
 ## Pre-Requisites
 Before start, make sure you have GIT and a code editor of your preference, Flutter SDK and like Visual Studio Code with Dart & Flutter plugin installed.
@@ -17,10 +27,13 @@ $ `git clone git@github.com:alex-cerlini/DevQuiz.git`
 
 And debug the App with your code editor.
 
+---
+
 ## Technology
 - Dart
 - Flutter
 
+---
 
 ## Author
 ---
