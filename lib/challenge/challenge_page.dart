@@ -38,7 +38,12 @@ class _ChallengePageState extends State<ChallengePage> {
                 ),
               ),
               SizedBox(width: 7),
-              Expanded(child: NextButtonWidget.darkGreen(label: "Confirmar")),
+              Expanded(
+                child: NextButtonWidget.darkGreen(
+                  label: "Confirmar",
+                  onTap: () {},
+                ),
+              ),
             ],
           ),
         ),
