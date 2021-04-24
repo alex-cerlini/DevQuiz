@@ -1,3 +1,4 @@
+import 'package:dev_quiz/challenge/challenge_page.dart';
 import 'package:dev_quiz/core/core.dart';
 import 'package:dev_quiz/home/home_controller.dart';
 import 'package:dev_quiz/home/home_state.dart';
@@ -67,7 +68,12 @@ class _HomePageState extends State<HomePage> {
                             completed:
                                 "${e.questionAwnsered}/${e.questions.length}",
                             onTap: () {
-                              print("Clicou");
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => ChallengePage(),
+                                ),
+                              );
                             },
                           ))
                       .toList(),
