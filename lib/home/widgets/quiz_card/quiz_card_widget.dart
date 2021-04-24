@@ -13,6 +13,7 @@ class QuizCardWidget extends StatelessWidget {
     required this.title,
     required this.completed,
     required this.percent,
+    required this.onTap,
   }) : super(key: key);
 
   @override
