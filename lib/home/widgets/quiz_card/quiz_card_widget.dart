@@ -6,6 +6,7 @@ class QuizCardWidget extends StatelessWidget {
   final String title;
   final String completed;
   final double percent;
+  final VoidCallback onTap;
 
   const QuizCardWidget({
     Key? key,
