@@ -1,5 +1,8 @@
-name: dev_quiz
-description: DevQuiz - Gabul DEV
+name: devquiz
+description: A new Flutter project.
+
+publish_to: 'none'
+
 version: 1.0.0+1
 
 environment:
@@ -8,15 +11,19 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
   cupertino_icons: ^1.0.2
   google_fonts: ^2.0.0
+  share_plus: ^2.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
 flutter:
-  assets:
+
+  uses-material-design: true
+
+  assets: 
     - assets/images/
     - assets/database/
-  uses-material-design: true

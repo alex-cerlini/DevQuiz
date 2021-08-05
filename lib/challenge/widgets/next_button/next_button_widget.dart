@@ -1,4 +1,4 @@
-import 'package:dev_quiz/core/core.dart';
+import 'package:devquiz/core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -9,7 +9,7 @@ class NextButtonWidget extends StatelessWidget {
   final Color borderColor;
   final VoidCallback onTap;
 
-  NextButtonWidget({
+  const NextButtonWidget({
     required this.label,
     required this.backgroundColor,
     required this.fontColor,
@@ -17,38 +17,34 @@ class NextButtonWidget extends StatelessWidget {
     required this.onTap,
   });
 
-  NextButtonWidget.darkGreen({
-    required String label,
-    required VoidCallback onTap,
-  })   : this.backgroundColor = AppColors.darkGreen,
+  NextButtonWidget.green({required this.label, required this.onTap})
+      : this.backgroundColor = AppColors.darkGreen,
         this.fontColor = AppColors.white,
-        this.borderColor = AppColors.border,
-        this.onTap = onTap,
-        this.label = label;
+        this.borderColor = AppColors.green;
 
-  NextButtonWidget.white({
-    required String label,
-    required VoidCallback onTap,
-  })   : this.backgroundColor = AppColors.white,
+  NextButtonWidget.purple({required this.label, required this.onTap})
+      : this.backgroundColor = AppColors.purple,
+        this.fontColor = AppColors.white,
+        this.borderColor = AppColors.green;
+
+  NextButtonWidget.white({required this.label, required this.onTap})
+      : this.backgroundColor = AppColors.white,
         this.fontColor = AppColors.grey,
-        this.borderColor = AppColors.white,
-        this.onTap = onTap,
-        this.label = label;
+        this.borderColor = AppColors.border;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 48,
       child: TextButton(
-        style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all(backgroundColor),
-            shape: MaterialStateProperty.all(
-              RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10),
-              ),
-            ),
-            side: MaterialStateProperty.all(BorderSide(color: borderColor))),
         onPressed: onTap,
+        style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all((backgroundColor)),
+          shape: MaterialStateProperty.all(
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+          ),
+          side: MaterialStateProperty.all(BorderSide(color: borderColor)),
+        ),
         child: Text(
           label,
           style: GoogleFonts.notoSans(
